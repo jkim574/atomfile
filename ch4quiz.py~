@@ -1,9 +1,0 @@
-#1. tell whehter the natural number is odd or even using the funtion is_odd.
-num = int(input())
-def is_odd():
-    if num % 2 == 0:
-        return True
-        print("This number is even!")
-    else:
-        print("this number is odd!")
-is_odd()
