@@ -16,7 +16,7 @@ class stack:
 
     def is_empty(self):
 #        print(self.items)
-        return self.items == []
+        return len(self.items) == 0
 
     def print_stack(self):
         print(self.items)
