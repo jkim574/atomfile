@@ -56,7 +56,6 @@ class LinkedList(object):
     #     else:
     #         curr = curr.next
 
-    def len("")
 
 
     def is_empty(self):
@@ -76,81 +75,3 @@ if __name__ == '__main__':
     # test.append(Node(10))
     test.print_linkedlist()
     test.is_empty()
-
-
-
-# public void print() {
-#         Node<T> curr = this.head;
-#        	while (curr != null) {
-# 	    System.out.println(curr.getData());
-# 	    curr = curr.getNext();
-# 	}
-#     }
-
-#         class linkedListNode:
-#     def __init__(self, value, nextNode=None):
-#         self.value = value
-#         self.nextNode = nextNode
-
-
-# class linkedList:
-#     def __init__(self, head=None):
-#         self.head = head
-
-#     def insert(self, value):
-#         node = linkedListNode(value)
-#         if self.head is None:
-#             self.head = node
-#             return
-
-#         currentNode = self.head
-#         while True:
-#             if currentNode.nextNode is None:
-#                 currentNode.nextNode = node
-#                 break
-#             currentNode = currentNode.nextNode
-
-#     def printLinkedList(self):
-#         currentNode = self.head
-#         while currentNode is not None:
-#             print currentNode.value, "->",
-#             currentNode = currentNode.nextNode
-#         print "None"
-
-
-
-
-# ll = linkedList()
-# ll.printLinkedList()
-# ll.insert("3")
-# ll.printLinkedList()
-# ll.insert("44")
-# ll.printLinkedList()
-# ll.insert("55")
-# ll.printLinkedList()
-
-
-
-
-# Nodes
-# 1. Value - anything strings, integers, objects
-# 2. The Next Node
-
-
-# class linkedListNode:
-#     def __init__(self, value, nextNode=None):
-#         self.value = value
-#         self.nextNode = nextNode
-
-
-# def insertNode(head, valuetoInsert):
-#     curr = curr.next()
-#     head
-# #     currentNode = head
-# #     while currentNode is not None:
-#         if currentNode.nextNode is None:
-#             currentNode.nextNode = linkedListNode(valuetoInsert)
-#             return head
-#         currentNode = currentNode.nextNode
-
-#
