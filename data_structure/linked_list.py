@@ -22,7 +22,7 @@ class Node(object):
     #function to set next node
     def set_next(self, next):
         self.next = next
-        self.curr = curr
+
 
 
 
@@ -50,28 +50,46 @@ class LinkedList(object):
                 curr = curr.next
             curr.next = node
 
-    # def append_index(self, previous_node, node):
-    #     if (previous_node is None):
-    #         print("Previous Node doens't exist")
-    #     else:
-    #         curr = curr.next
+    def size(self):
+        curr = self.head
+        count = 0
+        while(curr != None):
+            curr = curr.get_next()
+            count += 1
+        return count
 
 
+    def remove(self,item):
+        current = self.head
+        previous = None
+        found = False
+        while not found:
+            if current.getData() == item:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+
+        if previous == None:
+            self.head = current.getNext()
+        else:
+            previous.setNext(current.getNext())
 
     def is_empty(self):
-        if len(self.head) == 0:
-            return True
-        else:
-            return False
-
+        return self.head == None
 
 
 if __name__ == '__main__':
     test = LinkedList()
-    test.head = Node(3)
+    test.append(Node(3))
+    test.append(Node(30))
     test.append(Node(1))
     test.append(Node(5))
     # test.append(Node(9))
     # test.append(Node(10))
     test.print_linkedlist()
-    test.is_empty()
+    print(test.is_empty())
+    print("size is:", test.size())
+    test.remove(3)
+    test.remove(1)
+    test.print_linkedlist()
